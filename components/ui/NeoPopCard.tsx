@@ -31,7 +31,7 @@ export default function NeoPopCard({ children, className = '', variant = 'primar
   return (
     <div
       className={`
-        border-2 rounded-lg p-6
+        border-2 rounded-lg p-4 sm:p-6
         ${getVariantStyles()}
         ${hoverStyles}
         ${activeStyles}

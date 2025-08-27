@@ -35,11 +35,11 @@ export default function NeoPopButton({
   const getSizeStyles = () => {
     switch (size) {
       case 'small':
-        return 'px-4 py-2 text-sm h-10'
+        return 'px-3 sm:px-4 py-2 text-xs sm:text-sm h-9 sm:h-10'
       case 'large':
-        return 'px-8 py-4 text-lg h-14'
+        return 'px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg h-12 sm:h-14'
       default:
-        return 'px-6 py-3 text-base h-12'
+        return 'px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base h-10 sm:h-12'
     }
   }
 
@@ -54,6 +54,8 @@ export default function NeoPopButton({
         hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-neopop-hover
         disabled:opacity-50 disabled:cursor-not-allowed
         btn-ripple
+        ${fullWidth ? 'w-full' : ''}
+        min-h-[44px] min-w-[44px]
         ${className}
       `}
       disabled={disabled}

@@ -25,23 +25,23 @@ export default function ContactSection() {
   }
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8">
+    <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Side - Contact Info */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
               Let&apos;s <span className="text-primary-500">Connect</span>
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8">
               Ready to start your digital transformation journey? 
               We&apos;re here to turn your vision into reality.
             </p>
 
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-white" />
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-500 rounded-lg flex items-center justify-center">
+                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
                   <p className="text-white font-semibold">Phone</p>
@@ -49,9 +49,9 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-white" />
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-500 rounded-lg flex items-center justify-center">
+                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
                   <p className="text-white font-semibold">Email</p>
@@ -59,9 +59,9 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-white" />
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-500 rounded-lg flex items-center justify-center">
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
                   <p className="text-white font-semibold">Office</p>
@@ -72,9 +72,9 @@ export default function ContactSection() {
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="gradient-card p-8 rounded-xl">
-            <h3 className="text-2xl font-bold mb-6 text-white">Reach Out to Us</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="gradient-card p-6 sm:p-8 rounded-xl">
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-white">Reach Out to Us</h3>
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
                 <input
                   type="text"

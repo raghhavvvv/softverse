@@ -72,28 +72,28 @@ const coreServices = [
 
 export default function CoreServicesSection() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-neopop-dark-500/50">
+    <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-neopop-dark-500/50">
       <div className="max-w-7xl mx-auto">
         <ScrollAnimationWrapper animation="fadeIn" delay={0}>
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-4xl font-bold mb-4 font-inter tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-neopop-green-100 to-neopop-accent-green">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 font-inter tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-neopop-green-100 to-neopop-accent-green">
               Our Core Services
             </h2>
           </div>
         </ScrollAnimationWrapper>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {coreServices.map((service, index) => (
             <ScrollAnimationWrapper key={index} animation="slideUp" delay={index * 100}>
-              <div className="bg-neopop-dark-200 border-2 border-neopop-green-200 p-8 rounded-xl hover:transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-neopop transition-all duration-200 card-tilt glassmorphism-green">
+              <div className="bg-neopop-dark-200 border-2 border-neopop-green-200 p-6 sm:p-8 rounded-xl hover:transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-neopop transition-all duration-200 card-tilt glassmorphism-green">
                 <div className="flex flex-col">
-                  <div className="mb-6">
-                    <service.icon className={`w-12 h-12 ${service.iconColor} icon-bounce`} />
+                  <div className="mb-4 sm:mb-6">
+                    <service.icon className={`w-10 h-10 sm:w-12 sm:h-12 ${service.iconColor} icon-bounce`} />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-white font-inter tracking-wide uppercase">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white font-inter tracking-wide uppercase">
                     {service.title}
                   </h3>
-                  <p className="text-gray-300 leading-relaxed mb-6">
+                  <p className="text-sm sm:text-base text-gray-300 leading-relaxed mb-4 sm:mb-6">
                     {service.description}
                   </p>
                   <ul className="space-y-2">

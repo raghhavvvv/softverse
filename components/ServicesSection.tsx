@@ -55,10 +55,10 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-neopop-dark-500">
+    <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-neopop-dark-500">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-gilroy tracking-tight">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-gilroy tracking-tight">
             <span className="block text-white mb-2 font-gilroy">SOLUTIONS</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-neopop-green-100 to-neopop-accent-green font-gilroy">
               FOR EVERYONE
@@ -67,7 +67,7 @@ export default function ServicesSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-neopop-green-100 to-neopop-accent-green mx-auto"></div>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {services.map((service, index) => (
             <NeoPopCard 
               key={index} 
@@ -75,15 +75,15 @@ export default function ServicesSection() {
               className="group cursor-pointer"
             >
               <div className="flex flex-col h-full">
-                <div className="mb-6">
-                  <div className={`w-16 h-16 rounded-lg ${service.bgColor} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <service.icon className={`w-8 h-8 ${service.iconColor}`} />
+                <div className="mb-4 sm:mb-6">
+                  <div className={`w-12 h-12 sm:w-16 sm:h-16 rounded-lg ${service.bgColor} flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <service.icon className={`w-6 h-6 sm:w-8 sm:h-8 ${service.iconColor}`} />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-white font-gilroy tracking-wide">
+                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-white font-gilroy tracking-wide">
                   {service.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed flex-grow mb-6">
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed flex-grow mb-4 sm:mb-6">
                   {service.description}
                 </p>
                 <div className="mt-auto">
@@ -103,13 +103,13 @@ export default function ServicesSection() {
         {/* Call to action section */}
         <div className="text-center">
           <NeoPopCard variant="primary" className="max-w-4xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 font-gilroy text-white">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 font-gilroy text-white">
               READY TO TRANSFORM YOUR BUSINESS?
             </h3>
-            <p className="text-gray-300 mb-8 text-lg">
+            <p className="text-gray-300 mb-6 sm:mb-8 text-base sm:text-lg">
               Let&apos;s discuss how we can help you achieve your digital transformation goals.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <NeoPopButton variant="primary" size="large">
                 START YOUR PROJECT
               </NeoPopButton>
