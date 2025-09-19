@@ -55,7 +55,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Email</p>
-                  <p className="text-gray-300">hello@softversesystems.com</p>
+                  <p className="text-gray-300">sales@softversesystems.com</p>
                 </div>
               </div>
 
@@ -65,7 +65,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Office</p>
-                  <p className="text-gray-300">San Francisco, CA</p>
+                  <p className="text-gray-300">Lathrop, CA</p>
                 </div>
               </div>
             </div>
