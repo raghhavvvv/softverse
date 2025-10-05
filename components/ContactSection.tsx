@@ -45,7 +45,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Phone</p>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
+                  <p className="text-gray-300">+1 (209) 647-9896</p>
                 </div>
               </div>
 
